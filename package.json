@@ -1,0 +1,32 @@
+{
+  "name": "Jest-Test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:silent": "npx jest --transformIgnorePatterns \"node_modules/(?!@toolz/allow)/\" --env=jsdom --watchAll --silent --noStackTrace"
+  },
+  "transform": {
+    "^.+\\.(t|j)sx?$": "ts-jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^14.0.23",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^27.5.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^27.1.3",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
